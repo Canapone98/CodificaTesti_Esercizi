@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--ESERCIZIO 2 -->
+<root>
+	<element>Questo è il<element2>secondo esercizio</element>per il corso di Codifica di testi.</element2>
+<!-- ERRORE:
+
+	essendo (volutamente!) element e element2 annidati non correttamente,
+	viene visualizzato il seguente errore:
+
+	esercizio2.xml:4: parser error : Opening and ending tag mismatch: element2 line 4 and element
+        <element>Questo è il<element2>secondo esercizio</element>per il corso di Codif
+                                                                  ^
+	esercizio2.xml:4: parser error : expected '>'
+	<element2>secondo esercizio</element>per il corso di Codifica di testi.</element
+	                                                                               ^
+-->
+</root>	
