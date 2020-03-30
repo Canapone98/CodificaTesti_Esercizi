@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--ESERCIZIO 5
+
+	Studente: Giulio Canapa
+	Matricola: 568649
+	CdS: Informatica Umanistica
+
+	L'esercizio consiste nel dichiarare un elemento root TEI e tre figli con content model testuale:
+	- header (obbligatorio una occorrenza)
+	- facsimile (opzionale una occorrenza)
+	- text (obbligatorio almeno una occorrenza)
+
+-->
+<!DOCTYPE TEI [
+	<!ELEMENT TEI (header, facsimile?, text+) >
+	<!ELEMENT header (#PCDATA) >
+	<!ELEMENT facsimile (#PCDATA) >
+	<!ELEMENT text (#PCDATA) >
+]>
+
+<TEI>
+	<header>Header</header>
+	<facsimile>Facsimile</facsimile>
+	<text>Text</text>
+	<text>Text</text>
+</TEI>
