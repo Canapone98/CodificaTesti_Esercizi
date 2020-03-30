@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--ESERCIZIO 3
 	questo esercizio si basa sulla correzione del file xmlfirst.xml, che si presentava così:
-
 	<text>
-    il primo xml con validazione
+   	 il primo xml con validazione
 	</text>
 	<text />
 	
-	Verificandolo dal terminale con xmllint, veniva generato il seguente errore:
-	
+	Verificandolo dal terminale con xmllint, veniva generato il seguente errore:	
 	xmlfirst.xml:5: parser error : Extra content at the end of the document
 	<text />
 	^
-
 	-->
 <text>
-    Il primo xml con validazione.
+  	Il primo xml con validazione.
  	<primoFiglio>Questo è il primo figlio dell'elemento text.</primoFiglio>
  	<secondoFiglio>Questo è il secondo figlio dell'elemento text, fratello di primoFiglio.</secondoFiglio>
 </text>
 <!--CORREZIONE:
-
 	Per prima cosa, correggo l'errore del parser eliminando <text />.
 	In questo modo, ho un solo elemento text aperto e chiuso correttamente.
 	Al suo interno, inserisco un elemento figlio (child). 
