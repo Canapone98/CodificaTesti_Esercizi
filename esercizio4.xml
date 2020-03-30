@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- ESERCIZIO 4
+	L'esercizio consiste nell'inserire del codice HTML all'interno del file XML
+-->
+<htmlcode>
+<![CDATA[
+
+	<h1>Titolo</h1>
+	<h2>Sottotitolo</h2>
+	<p>Paragrafo</p>
+
+]]>
+</htmlcode>
