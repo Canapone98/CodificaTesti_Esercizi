@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--ESERCIZIO 7
+
+	Studente: Giulio Canapa
+	Matricola: 568649
+	CdS: Informatica Umanistica
+
+	L'esercizio consiste nel dichiarare una DTD interna
+-->
+<!DOCTYPE root [
+	<!ELEMENT root (child)>
+	<!ELEMENT child (#PCDATA)>
+]>
+
+<root>
+	<child>Testo</child>
+</root>
