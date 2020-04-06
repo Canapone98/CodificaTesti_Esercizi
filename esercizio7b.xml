@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--ESERCIZIO 7
+
+	Studente: Giulio Canapa
+	Matricola: 568649
+	CdS: Informatica Umanistica
+
+	L'esercizio consiste nel dichiarare una DTD esterna
+-->
+<!DOCTYPE root SYSTEM "./esercizio7b.dtd">
+
+<root>
+	<child>Testo</child>
+</root>
