@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Studente: Giulio Canapa
+    CdL: InfoUma
+    Matricola: 568649
+
+    L'esercizio è la correzione dell'esercizio8a.xml
+-->
+<text>
+     <title>Esercizio 8</title>
+    <page n="1"/>
+    <p>Questo esercizio è stato cor-
+    <page n="2"/>
+     retto.</p>
+</text>
