@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">	
+	<!--  
+		
+	Studente: Giulio Canapa
+	CdL: InfoUma
+	Matricola: 568649
+
+	L'esercizio consiste nella codifica di una lettera di Bellini
+
+	-->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Vincenzo Bellini a Saverio Mercadante, in Milano, 3 novembre 1832</title>
+				<author ref="#VB">Vincenzo Bellini</author>
+				<respStmt>
+					<resp>Transcription by</resp>
+					<name xml:id="GS">Graziella Seminara</name>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>Digital Edition
+					<date when="2020-09">September 2020</date>
+				</edition>
+				<respStmt>
+					<resp>Encoding by</resp>
+					<name xml:id="GC">Giulio Canapa</name>	
+				</respStmt>
+				<respStmt n="2">
+					<resp>Project coordinated by </resp>
+					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
+					<name xml:id="EC">Erica Capizzi</name>
+					<name xml:id="DS">Daria Spampinato</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<publisher ref="https://infouma.fileli.unipi.it/">
+					Università di Pisa - Informatica Umanistica
+				</publisher>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl source="#Seminara2017" resp="#GS" ana="214">
+					<citedRange unit="page" from="286" to="286">286</citedRange>
+				</bibl>	
+				<msDesc>
+					<msIdentifier>
+						<country>Italy</country>
+						<settlement>Catania</settlement>
+						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano Catania</repository>
+						<idno type="inventory">LL1.10</idno>					
+						<altIdentifier>
+							<idno type="collocation">Primo piano, armadio sala pianoforti</idno>
+						</altIdentifier>						
+					</msIdentifier>
+					<msContents>
+						<msItem>
+							<author xml:lang="it" ref="VB">Vincenzo Bellini</author>
+							<title type="uniform" xml:lang="it">
+								<persName ref="#VB" role="composer">Vincenzo Bellini</persName> a <persName ref="#SM" role="composer">Saverio Mercadante</persName>,
+								in <placeName ref="#MI">Milano</placeName>, <date when="1832-11-03" cert="high" resp="#GS">3 novembre 1832</date>
+							</title>
+							<textLang mainLang="it">italiano di inizio Ottocento</textLang>
+							<note>La data di redazione della lettera è stata attribuita da <persName ref="#GS">Seminara </persName> e non presente nel documento originale.</note>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<material>Carta sottile.</material>
+									<stamp> 
+						 			Nel retro sono presenti tre frammenti di un sigillo di ceralacca rossa.
+									</stamp>
+									<p>Biglietto in buone condizioni fisiche, composto da un solo folio, piegato in più parti e con testo sia sul fronte che sul retro. Carta sottile senza filigrana, colore beige, inchiostro nero. Conservatosi bene nel tempo, il biglietto non presenta strappi. Nella parte alta del biglietto si nota al centro un piccolo foro che attraversa tutte e quattro le sezioni. Il folio presenta fronte e retro. Il fronte è piegato in recto (a dx) e verso (a sx), con l'indirizzo nel verso e il testo nel recto. Il retro presenta il recto (a sx) e il verso (a dx). Sul retro recto è presente il resto del testo iniziato nel fronte recto, mentre il retro verso è vuoto. </p>
+								</support>
+								<extent>
+									<measure type="folio">1</measure>				
+									<dimensions unit="mm">
+										<height>128</height>
+										<width>100</width>
+									</dimensions>
+								</extent>
+								<foliation>	
+									<p>Il folio presenta al centro una piegatura verticale, che lo suddivide in quattro sezioni. Sono anche presenti quattro sottili piegature orizzontali: si presume che il biglietto sia stato piegato su sè stesso prima di essere spedito.</p>
+								</foliation>
+								<condition>
+									<p>Biglietto in buone condizioni fisiche.</p>
+								</condition>
+							</supportDesc>
+						</objectDesc>
+						<handDesc hands="4">
+							<handNote>
+								<p>Scrittura di Bellini a mano libera leggibile.</p>
+							</handNote>
+							<handNote xml:id="h1" facs="#LL1.10_hotspot_1f_1">								
+								<p>Una annotazione a matita in alto a destra sul fronte recto. Probabilmente dovuta ad un catalogatore, presenta il numero 65.</p>
+							</handNote>
+							<handNote xml:id="h2" facs="LL1.10_hotspot_1f_2">
+								<p>Una piccola annotazione a matita in basso a sinistra sul fronte recto che inizia con una "h" minuscola in corsivo. Il resto dell'annotazione è illeggibile.</p>
+							</handNote>
+							<handNote xml:id="h3" facs="LL1.10_hotspot_2f_4">
+								<p>Seppur sbiadita, è possibile notare la sigla "VI" a destra sul fronte verso.</p>
+							</handNote>
+						</handDesc>
+						<sealDesc>						
+							<seal facs="#LL1.10_hotspot_2f_1" type="wax">
+								<p>Il fronte verso, in alto a sinistra, presenta un frammento di sigillo di ceralacca rossa.</p>
+							</seal>
+							<seal facs="#LL1.10_hotspot_2f_2" type="wax">
+								<p>Il fronte verso, in basso a sinistra, presenta una piccola macchia di ceralacca rossa.</p>
+							</seal>
+							<seal facs="#LL1.10_hotspot_2f_3" type="wax">
+								<p>Il fronte verso, in basso a sinistra, presenta una macchia di ceralacca rossa.</p>
+							</seal>
+						</sealDesc>
+					</physDesc>
+					<additional>
+						<adminInfo>
+							<note>		
+								<p>All'interno del carteggio belliniano (LL), la segnatura LL1.10 identifica la decima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle lettere scritte da Vincenzo Bellini.</p>
+							</note>
+						</adminInfo>
+					</additional>
+				</msDesc>
+				<listPerson>
+					<head>Lista Persone</head>
+					<person xml:id="VB" sameAs="http://viaf.org/viaf/39560983"> 
+         				<persName role="composer"> 
+          					<ref target="http://data.rism.info/id/rismauthorities/pe11648 http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
+          					<forename>Vincenzo</forename>
+          					<forename>Salvatore</forename>
+          					<forename>Carmelo</forename>
+          					<forename>Francesco </forename> 
+              				<surname>Bellini</surname>
+             				 <addName type="alias">Il Cigno</addName>
+             				 <roleName type="honorific">Cavaliere della Legione d'onore</roleName> 
+           				 </persName>
+           				 <sex>M </sex>
+           				 <birth><date when="1801-11-03">3 novembre 1801</date>
+            				<placeName ref="#CT">
+            					<settlement type="municipality">Catania</settlement>
+            	 				<settlement type="provincia" key="CT">Catania</settlement>
+            	 				<country key="IT">Italia</country>
+            				</placeName>
+           				 </birth>
+           				 <death><date when="1835-09-23">23 settembre 1835</date>
+            				<placeName ref="#Put">
+            					<settlement type="municipality">Puteaux</settlement>
+            	 				<settlement type="department" key="Paris">Paris</settlement>
+            	 				<country key="FR">France</country>
+            				</placeName>
+						</death>    		
+       			   </person>
+       			   <person xml:id="SM" sameAs="https://viaf.org/viaf/42026042">
+       			   		<persName role="composer">
+       			   			<ref target="http://www.treccani.it/enciclopedia/saverio-mercadante_(Dizionario-Biografico)"/>
+       			   			<forename>Giuseppe</forename>
+       			   			<forename>Saverio</forename>
+       			   			<forename>Raffaele</forename>
+       			   			<surname>Mercadante</surname>
+       			   			</persName>
+       			   		<sex>M </sex>
+       			   		<birth><date when="1795-09-17">17 settembre 1795</date>
+       			   			<placeName>
+       			   				<settlement type="municipality">Altamura</settlement>
+       			   				<settlement type="department" key="BA">Bari</settlement>
+       			   				<country key="IT">Italia</country>
+       			   			</placeName>
+       			   		</birth>	
+       			  	 	<death><date when="1870-12-17">17 dicembre 1870</date>
+       			   			<placeName ref="#NA">
+       			   				<settlement type="municipality">Napoli</settlement>
+       			   				<settlement type="department" key="NA">Napoli</settlement>
+       			   				<country key="IT">Italia</country>
+       			   			</placeName>		
+       			   		</death>
+       			   		<note source="#Seminara2017" resp="#GS" ana="28">
+       			   			<bibl>
+                      	  		<citedRange unit="page" from="73" to="73">73</citedRange>
+                  			</bibl>
+                  			<p><persName ref="#SM" role="composer">Saverio Mercadante</persName> (Altamura, 1795-Napoli, 1870) studiò al Collegio di San Sebastiano con Furno, Tritto e Zingarelli. Esordì al Teatro di San Carlo il 19 agosto 1819 con L’apoteosi di Ercole su libretto di Giovanni Schmidt; il successo di Donna Caritea, regina di Spagna, composta su versi di Paolo Pola e messa in scena al Teatro La Fenice di Venezia il 21 febbraio 1826, gli valse fama europea e le sue opere vennero rappresentate a Madrid, Lisbona, Vienna e Parigi. Amico e sodale del più giovane collega, lo aiutò in occasione del suo arrivo a Milano e restò in contatto con lui anche dopo il trasferimento di Bellini a Parigi.</p>
+       			   		</note>		
+       			   </person>
+       			   <person xml:id="SG">
+       			   		<persName>
+       			   			<forename>Sofia</forename>
+       			   			<surname>Gambaro</surname>
+       			   		</persName>
+       			   		<sex>F </sex>
+       			   		<birth><date>unknown</date>
+       			   			<placeName>
+       			   				<settlement type="municipality">Genova</settlement>
+       			   				<settlement type="department" key="GE">Genova</settlement>
+       			   				<country key="IT">Italia</country>
+       			   			</placeName>	
+       			   		</birth>
+       			   		<note source="#Seminara2017" resp="#GS" ana="473">
+       			   			<bibl>
+                      	  		<citedRange unit="page" from="286" to="286">286</citedRange>
+                  			</bibl>
+                  			<p>Si trattava della genovese Sofia Gambaro, che aveva sposato Mercadante l’8 luglio 1832.</p>
+       			   		</note>	
+       			   	</person>
+       			   	<person xml:id="Mariuccia">
+       			   		<persName>
+       			   			<addName type="alias">Mariuccia</addName>
+       			   		</persName>
+       			   		<sex>F </sex>
+       			   	</person>
+          			<listRelation>
+          				<relation name="spouse" mutual="#SM #SG"/>
+          				<relation name="sibling-in-law" mutual="#SM #Mariuccia"/>
+          				<relation name="sister" mutual="#SG #Mariuccia"/>
+          			</listRelation>
+				</listPerson>
+				<listPlace>
+					<head>Lista Luoghi</head>
+					<place xml:id="MI">
+                      	<placeName ref="http://www.geonames.org/3173435 http://www.treccani.it/enciclopedia/milano/">Milano</placeName>
+                       	<country key="IT">Italia</country>
+                        <note/>
+                   </place>
+                   	<place xml:id="CT">
+	                    <placeName ref="http://www.geonames.org/2525068/catania.html http://www.treccani.it/enciclopedia/catania/">Catania</placeName>
+	                    <country key="IT">Italia</country>
+	                    <note/>
+                   	</place>
+                   	 <place xml:id="Paris">
+                        <placeName ref="http://www.geonames.org/2988507 http://www.treccani.it/enciclopedia/parigi/">Paris</placeName>
+                        <country key="FR">France</country>
+                        <note></note>
+                    </place>
+                    <place xml:id="Put">
+	                    <placeName ref="http://www.geonames.org/2985034 http://www.treccani.it/enciclopedia/puteaux_(Enciclopedia-Italiana)">Puteaux</placeName>
+	                    <district type="arrondissement">Nanterre</district>
+	                    <settlement type="city">Paris</settlement>
+	               	    <country key="FR">France</country>
+	                    <note source="#Seminara2017" resp="#GS" ana="580">
+	                       	<bibl>
+	                       	  	<citedRange unit="page" from="346" to="346">346</citedRange>
+	                       	</bibl>
+	                       	<p>Puteaux era un sobborgo di <placeName ref="#Paris">Parigi</placeName>, immerso nel verde e situato sulla <foreign xml:lang="fr">rive gauche</foreign> della Senna. Qui Bellini si stabilì dal 26 maggio al 1° novembre 1834 e di nuovo nel 1835 dall'11 maggio al 23 settembre (giorno della morte) nella residenza di Solomon Levy (o Lewis), un facoltoso ebreo inglese che verosimilmente aveva conosciuto nel 1830 a Milano. Levy, che negli anni 1834-35 si trattenne stabilmente a Parigi, apparteneva alla cerchia delle più ristrette frequentazioni francesi del musicista; risiedeva in un lussuoso appartamento in Boulevard des Capucines, ma possedeva anche la residenza di Puteaux.</p> 
+	                    </note>
+                    </place>
+                    <place xml:id="NA">
+                        <placeName ref="http://www.geonames.org/3172394 http://www.treccani.it/enciclopedia/napoli/">Napoli</placeName>
+                        <country key="IT">Italia</country>
+                        <note></note>
+                    </place>
+				</listPlace>	
+				<list>
+					<head>Vocabolario</head>
+              		<label>
+                       <term subtype="music-term" xml:lang="it" xml:id="balletto" key="">Balletto</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="it" target="#balletto" source="#DellaSeta2010">
+                        (anche "ballo") Nell'accezione più ampia, qualsiasi rappresentazione fondata sul movimento corporeo, regolata da uno schema precostituito di passi, detto 
+                        <term subtype="music-term">coreografia(2)</term>, e accompagnata dalla musica. <gap reason="editorial"/>
+                        </gloss>
+                        <note source="#Seminara2017" resp="#GS" ana="472">
+       			   			<bibl>
+                      	  		<citedRange unit="page" from="286" to="286">286</citedRange>
+                  			</bibl>
+                  			<p>Bellini si riferiva probabilmente al ballo di Antonio Monticini Colombo all’isola di Cuba, che andò in scena al Teatro alla Scala il 3 novembre 1832.</p>
+       			   		</note>	
+                    </item>
+				</list>
+				<listOrg>
+					<head>Teatri ed Enti</head>
+					 <org type="theatre" xml:id="Scala">
+                        <orgName ref="http://www.treccani.it/enciclopedia/teatro-alla-scala/">Teatro alla Scala</orgName>
+                    	<placeName ref="#MI">Milano</placeName>
+                    </org>
+				</listOrg>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="#VB" role="composer">Vincenzo Bellini</persName>
+					<placeName ref="#MI" type="postmark">Milano</placeName>
+					<date when="1832-11-03" cert="high" resp="#GS" type="writing">3 novembre 1832</date>					
+				</correspAction>
+				<correspAction type="received">
+					<persName ref="#SM" role="composer">Saverio Mercadante</persName>
+				</correspAction >
+				<correspContext>
+					<p>non è presente un contesto di riferimento</p>
+				</correspContext>
+			</correspDesc>
+			<textClass>
+				<keywords scheme="http://thes.bncf.firenze.sbn.it">					
+					<term resp="#GS">biglietto</term>
+				</keywords>
+			</textClass>
+			<langUsage>
+				<language ident="it">italiano di inizio Ottocento</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" xml:id="LL.10_folio_1f">
+			<graphic url='LL1.10_0001.jpg' width='1236.4px' height='1559.4px' />
+			<zone ulx="233" uly="358" lrx="737" lry="436" rendition="Line" xml:id="LL1.10_line_1f_1" />
+			<zone ulx="402" uly="502" lrx="1102" lry="585" rendition="Line" xml:id="LL1.10_line_1f_2" />
+			<zone ulx="225" uly="576" lrx="1158" lry="664" rendition="Line" xml:id="LL1.10_line_1f_3" />
+			<zone ulx="189" uly="683" lrx="1181" lry="760" rendition="Line" xml:id="LL1.10_line_1f_4" />
+			<zone ulx="201" uly="776" lrx="1115" lry="856" rendition="Line" xml:id="LL1.10_line_1f_5" />
+			<zone ulx="204" uly="878" lrx="1193" lry="959" rendition="Line" xml:id="LL1.10_line_1f_6" />
+			<zone ulx="190" uly="977" lrx="1142" lry="1079" rendition="Line" xml:id="LL1.10_line_1f_7" />
+			<zone ulx="191" uly="1072" lrx="1190" lry="1170" rendition="Line" xml:id="LL1.10_line_1f_8" />
+			<zone ulx="189" uly="1181" lrx="1178" lry="1268" rendition="Line" xml:id="LL1.10_line_1f_9" />
+			<zone ulx="189" uly="1274" lrx="1184" lry="1348" rendition="Line" xml:id="LL1.10_line_1f_10" />
+			<zone ulx="196" uly="1342" lrx="1156" lry="1415" rendition="Line" xml:id="LL1.10_line_1f_11" />
+			<zone ulx="184" uly="1424" lrx="1140" lry="1492" rendition="Line" xml:id="LL1.10_line_1f_12" />
+			<zone ulx="942" uly="60" lrx="1160" lry="151" rendition="HotSpot" xml:id="LL1.10_hotspot_1f_1"/> <!--annotazione a matita, si legge il numero 65-->
+			<zone ulx="38" uly="1442" lrx="145" lry="1524" rendition="HotSpot" xml:id="LL1.10_hotspot_1f_2" /><!--scrittura a matita, illeggibile-->
+		</surface>
+		<surface n="2" xml:id="LL.10_folio_1r">
+			<graphic url='LL1.10_0002.jpg' width='1250.4px' height='1581.4px' />
+			<zone ulx="152" uly="504" lrx="1210" lry="606" rendition="Line" xml:id="LL1.10_line_1r_1" />
+			<zone ulx="231" uly="589" lrx="1160" lry="706" rendition="Line" xml:id="LL1.10_line_1r_2" />
+			<zone ulx="132" uly="706" lrx="1185" lry="808" rendition="Line" xml:id="LL1.10_line_1r_3" />
+			<zone ulx="146" uly="807" lrx="781" lry="878" rendition="Line" xml:id="LL1.10_line_1r_4" />
+			<zone ulx="375" uly="884" lrx="1035" lry="978" rendition="Line" xml:id="LL1.10_line_1r_5" />
+			<zone ulx="705" uly="980" lrx="1109" lry="1056" rendition="Line" xml:id="LL1.10_line_1r_6" />
+			<zone ulx="765" uly="1063" lrx="1157" lry="1188" rendition="Line" xml:id="LL1.10_line_1r_7" />
+			<zone ulx="195" uly="1183" lrx="833" lry="1277" rendition="Line" xml:id="LL1.10_line_1r_8" />
+		</surface>
+		<surface n="3" xml:id="LL.10_folio_2r">
+			<graphic url='LL1.10_0003.jpg' width='1250.4px' height='1559.4px' />
+		</surface>
+		<surface n="4" xml:id="LL.10_folio_2f">
+			<graphic url='LL1.10_0004.jpg' width='1250.4px' height='1563.4px' />
+			<zone ulx="217" uly="631" lrx="1061" lry="726" rendition="Line" xml:id="LL1.10_line_2f_1" />
+			<zone ulx="737" uly="775" lrx="1078" lry="900" rendition="Line" xml:id="LL1.10_line_2f_2" />
+			<zone ulx="49" uly="23" lrx="173" lry="74" rendition="HotSpot" xml:id="LL1.10_hotspot_2f_1" /> <!--ceralacca rossa-->
+			<zone ulx="97" uly="1245" lrx="161" lry="1300"  rendition="HotSpot" xml:id="LL1.10_hotspot_2f_2" /> <!--ceralacca rossa-->
+			<zone ulx="118" uly="1317" lrx="202" lry="1378"  rendition="HotSpot" xml:id="LL1.10_hotspot_2f_3" /> <!--ceralacca rossa-->
+			<zone ulx="893" uly="285" lrx="1189" lry="677" rendition="HotSpot" xml:id="LL1.10_hotspot_2f_4" /> <!--scrittura a matita, si legge la sigla "VI"-->
+		</surface>
+	</facsimile>
+	<text subtype="manuscript" xml:id="LL1.10" n="LL1.10">
+		<front>
+			<pb n="0" xml:id="LL1.10_fol_front" facs="#LL1.10_folio_2f"/> 
+			<div type="envelope">	
+				<div type="sent">
+					<ab xml:id="LL1.10_hs_front" facs="#LL1.10_hotspot_2f_1">
+						<stamp type="postmark">			
+							<mentioned>
+								<placeName ref="#MI">Milano</placeName>		
+								<date when="1832-11-03">3 novembre 1832</date>			
+							</mentioned>
+						</stamp>
+					</ab>
+				</div>
+				<div type="destination">
+					<ab type="receiver">
+						<address>			
+							<lb xml:id="LL1.10_lb_front_1" n="1" facs="#LL1.10_line_2f_1"/>
+							<addrLine>a Monsieur <persName ref="SM">Mercadante</persName></addrLine>
+							<lb xml:id="LL1.10_lb_front_2" n="2" facs="#LL1.10_line_2f_2"/>
+							<addrLine>Chez-lui</addrLine>
+						</address>
+					</ab>
+				</div>
+			</div>
+		</front>
+		<body xml:lang="it">
+			<div type="fronte-recto">
+				<pb n="1" xml:id="LL.10_fol_1f" facs="LL1.10_folio_1f"/>
+				<div type="letter-body" n="t_01">
+					<salute>
+						<s type="sentence" n="s_01">
+							<lb xml:id="LL1.10_lb_1f_1" n="1" facs="#LL1.10_line_1f_1"/>
+							Mio caro <persName ref="#SM">amico</persName>
+						</s>
+					</salute>
+					<ab type="parag" n="ab_01">
+						<s type="sentence" n="s_02">
+							<lb xml:id="LL1.10_lb_1f_2" n="2" facs="#LL1.10_line_1f_2"/>
+							Mi affretto a rapportarvi
+							<lb xml:id="LL1.10_lb_1f_3" n="3" facs="#LL1.10_line_1f_3"/>
+							che le pellicce sono di <abbr>vra </abbr><expan>v<ex resp="#GS">ost</ex>ra</expan> <w>pro =
+							<lb xml:id="LL1.10_lb_1f_4" n="4" facs="#LL1.10_line_1f_4" break="no" rend="double stroke"/>
+							prietà</w> mediante <num type="cardinal" value="16">sedici</num> zecchini:
+						</s>
+						<s type="question" n="s_03">
+							<lb xml:id="LL1.10_lb_1f_5" n="5" facs="#LL1.10_line_1f_5"/>
+							siete contento?
+						</s>
+						<s type="sentence" n="s_04">
+							Questa sera spero
+							<lb xml:id="LL1.10_lb_1f_6" n="6" facs="#LL1.10_line_1f_6"/>
+							vedervi in teatro. 
+						</s>
+						<s type="sentence" n="s_05">
+							- V'è il <term ref="balletto">ballo novo</term>,
+							<lb xml:id="LL1.10_lb_1f_7" n="7" facs="#LL1.10_line_1f_7"/>
+							e la povera <persName ref="#SG">Sofia</persName> vi deve essere,
+							<lb xml:id="LL1.10_lb_1f_8" n="8" facs="#LL1.10_line_1f_8"/>
+							dunque son sicuro che andrà in una
+							<lb xml:id="LL1.10_lb_1f_9" n="9" facs="#LL1.10_line_1f_9"/>
+							gran collera;
+						</s>
+						<s type="sentence" n="s_06">
+							quindi a rivederci:
+						</s>
+						<s type="sentence" n="s_07">
+							già
+							<lb xml:id="LL1.10_lb_1f_10" n="10" facs="#LL1.10_line_1f_10"/>
+							sarete al solito: vicino alla volta celeste
+							<lb xml:id="LL1.10_lb_1f_11" n="11" facs="#LL1.10_line_1f_11"/>
+							della <orgName ref="Scala">Scala</orgName>!
+						</s>
+						<s type="sentence" n="s_08_1">
+							- Gradite i miei <abbr>abb:<hi rend="superscript">ci </hi></abbr><expan>abb<ex resp="#gs">rac</ex>ci</expan> e
+							<lb xml:id="LL1.10_lb_1f_12" n="12" facs="#LL1.10_line_1f_12"/>
+							fate i miei cordiali saluti alla <abbr>vra </abbr><expan>v<ex resp="#GS">ost</ex>ra</expan>
+						</s>
+					</ab>
+				</div>
+			</div>
+			<div type="retro-recto">
+				<pb n="2" xml:id="LL.10_fol_1r" facs="LL1.10_folio_1r"/>
+				<div type="letter-body" n="t_02">
+					<ab type="parag" n="ab_02">
+						<s type="sentence" n="s_08_2">
+							<lb xml:id="LL1.10_lb_1r_1" n="13" facs="#LL1.10_line_1r_1"/>
+							gentile <persName ref="#SG"><choice><sic>mettà </sic><reg resp="#GS">metà</reg></choice></persName> e
+							<persName ref="#Mariuccia"><hi rend="underline"><distinct type="dialectal">cugnaa</distinct> Mariuccia</hi></persName>.
+						</s>
+						<s type="sentence" n="s_09">
+							<lb xml:id="LL1.10_lb_1r_2" n="14" facs="#LL1.10_line_1r_2"/>
+							V'ho scritto perchè la <persName ref="SG">Sofia</persName>
+							<lb xml:id="LL1.10_lb_1r_3" n="15" facs="#LL1.10_line_1r_3"/>
+							possa dar disposizione sull'<w>acco =
+							<lb xml:id="LL1.10_lb_1r_4" n="16" facs="#LL1.10_line_1r_4" break="no" rend="double stroke"/>
+							modo</w> del vestito <abbr>ec: </abbr><expan>ec<ex>cetera </ex></expan><abbr>ec: </abbr><expan>ec<ex>cetera</ex></expan>
+						</s>
+						<s type="sentence" n="s_10">
+							<lb xml:id="LL1.10_lb_1r_5" n="17" facs="#LL1.10_line_1r_5"/>
+							Credete a tutte le prove
+						</s>
+					</ab>
+				</div>
+				<div type="closer">
+					<salute>
+						<s type="sentence" n="s_11">
+							<lb xml:id="LL1.10_lb_1r_6" n="18" facs="#LL1.10_line_1r_6"/>
+							<abbr>Vro </abbr><expan>V<ex resp="#GS">ost</ex>ro</expan><abbr>affsmo </abbr><expan>aff<ex resp="#GS">ezionatis</ex>s<ex>i</ex>mo</expan> 
+							<abbr>A<hi rend="superscript">o </hi></abbr><expan>A<ex>mic</ex>o</expan>
+							<lb xml:id="LL1.10_lb_1r_7" n="19" facs="#LL1.10_line_1r_7"/>
+							<persName ref="VB">Bellini</persName>
+						</s>
+						<s type="sentence" n="s_12">
+							<lb xml:id="LL1.10_lb_1r_8" n="20" facs="#LL1.10_line_1r_8"/>
+							Casa -Sabato mattina-
+						</s>
+					</salute>
+				</div>
+			</div>	
+			<div type="retro-verso">
+				<pb n="3" xml:id="LL1.10_fol_2r" facs="#LL1.10_folio_2r"/> 
+			</div>
+			<div type="fronte-verso">
+				<pb n="4" xml:id="LL1.10_fol_2f" facs="#LL1.10_folio_2f"/> 
+				<ab type="receiver">
+					<address>			
+						<lb xml:id="LL1.10_lb_2f_1" n="21" facs="#LL1.10_line_2f_1"/>
+						<addrLine>a Monsieur <persName ref="SM">Mercadante</persName></addrLine>
+						<lb xml:id="LL1.10_lb_2f_2" n="22" facs="#LL1.10_line_2f_2"/>
+						<addrLine>Chez-lui</addrLine>
+					</address>
+				</ab>
+			</div>
+		</body>
+		<back>
+			<div type="notes">
+				<ab xml:id="LL1.10_hs_2f_1" facs="#LL1.10_hotspot_2f_1">
+					<stamp type="postmark">			
+						<mentioned>
+							<placeName ref="#MI">Milano</placeName>		
+							<date when="1832-11-03">3 novembre 1832</date>			
+						</mentioned>
+					</stamp>
+				</ab>
+				<ab type="paratext" subtype="addition" hand="#h1" xml:id="LL1.10_hs_1f_1" facs="#LL1.10_hotspot_1f_1">		
+					<fw type="catalogNum"><idno type="oldCat">65</idno></fw>
+				</ab>
+					<ab type="paratext" subtype="addition" hand="#h2" xml:id="LL1.10_hs_1f_2" facs="#LL1.10_hotspot_1f_2">		
+					<unclear>h</unclear>
+				</ab>
+				<ab type="paratext" subtype="addition" hand="#h3" xml:id="LL1.10_hs_2f_4" facs="#LL1.10_hotspot_2f_4">		
+					<unclear>VI</unclear>
+				</ab>
+			</div>
+			<div type="bibliography">
+				<listBibl xml:id="LL1_10_bibliography">
+					<head>Bibliografia Lettera LL1.10:</head>
+					<bibl xml:id="LL1_10_Neri">
+						<author>Neri</author>
+						<date when="2005">2005</date>
+						<citedRange unit="page" from="238" to="239">pp. 238-239</citedRange>
+					</bibl>
+					<bibl xml:id="LL1_10_Pastura">
+						 <author>Pastura</author>
+						 <date when="1958">1958</date>
+						 <citedRange unit="page" from="6" to="6">pp. 6</citedRange>
+					</bibl>
+					<bibl xml:id="LL1_10_Seminara">
+						<author>Seminara</author>
+						<date when="2017">2017</date>
+						<citedRange unit="page" from="286" to="286" ana="214">pp. 286</citedRange>
+					</bibl>
+				</listBibl>
+			</div> 	
+			<div type="bibliography">
+				<listBibl xml:id="complete_bibliography">
+					<head>Bibliografia Completa:</head>
+					<bibl xml:id="Neri2005" type="print">
+	                    <author xml:id="CN">
+	                       	<forename>Carmelo</forename>
+	                       	<surname>Neri</surname>
+	                    </author>
+	                    <title level="m">"Vincenzo Bellini. Nuovo Epistolario. 1819-1835"</title>
+	                    <pubPlace>Catania</pubPlace>
+	                    <publisher>Agorà</publisher>
+	                    <date when="2005">2005</date>
+	                </bibl>
+	                <bibl xml:id="Pastura1958" type="print">
+	                    <author xml:id="FPa">
+	                       	<forename>Francesco</forename>
+	                       	<surname>Pastura</surname>
+	                   </author>
+	 					<title level="a">"Nuovi importanti documenti assicurati al Museo Belliniano"</title>
+	                	<title level="j">"Rivista del Comune di Catania"</title>
+	                    <biblScope unit="volume">vol. VI</biblScope>
+	  					<biblScope unit="page" from="111" to="118">pp. 111-118</biblScope>
+	                    <pubPlace>Catania</pubPlace>
+	                    <date when="1958">ottobre-dicembre 1958</date>
+	                </bibl>
+	                <bibl xml:id="Seminara2017" type="print">
+	                    <editor ref="#GS">
+	                       	<forename>Graziella</forename>
+	                       	<surname>Seminara</surname>
+	                    </editor>
+	                    <title level="m">"Vincenzo Bellini. Carteggi"</title>
+	                    <title level="s">"Historiae Musicae Cultores"</title>
+	                    <biblScope unit="volume">vol. CXXXI</biblScope>
+	                    <biblScope unit="page">pp. vi+622</biblScope>
+	  					<pubPlace>Firenze</pubPlace>
+	                    <publisher>Leo S. Olschki Editore</publisher>
+	                    <date when="2017">2017</date>                       
+	                </bibl>
+	                <bibl xml:id="DellaSeta2010" type="print">
+                        <editor xml:id="FDS">
+                        	<forename>Fabrizio</forename>
+                        	<surname>Della Seta</surname>
+                        </editor>
+                        <title level="m">"Le parole del teatro musicale"</title>
+                        <pubPlace>Roma</pubPlace>
+                        <publisher>Carocci</publisher>
+                        <date when="2010">2010</date>
+                    </bibl>
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
